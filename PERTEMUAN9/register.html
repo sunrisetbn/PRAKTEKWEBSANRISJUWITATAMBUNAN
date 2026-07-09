@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Akun Baru</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Daftar Akun</h2>
+      <form
+        onsubmit="alert('Pendaftaran Berhasil! Silakan Login.'); window.location.href='login.html'; return false;"
+      >
+        <div class="user-box">
+          <input type="text" id="reg-usr" required="" />
+          <label>Username Baru</label>
+        </div>
+        <div class="user-box">
+          <input type="email" id="reg-email" required="" />
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="password" id="reg-pass" required="" />
+          <label>Password</label>
+        </div>
+        <button
+          type="submit"
+          class="btn-submit"
+          style="background: transparent; border: none; cursor: pointer"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          SUBMIT
+        </button>
+      </form>
+
+      <div class="bawah">
+        <span class="test"
+          >Sudah punya akun? <a href="login.html">Login di sini</a></span
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      var awal = prompt("Angka awal ?", 0);
+      var akhir = prompt("Angka akhir ?", 0);
+      var teks = "";
+
+      if (akhir < awal) {
+        for (let i = awal; i >= akhir; i--) {
+          teks += i + "<br>";
+        }
+      } else if (awal <= akhir) {
+        for (let i = awal; i <= akhir; i++) {
+          teks += i + "<br>";
+        }
+      }
+
+      document.write("<p>" + teks + "</p>");
+    </script>
+  </body>
+</html>

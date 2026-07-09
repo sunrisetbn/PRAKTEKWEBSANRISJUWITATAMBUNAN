@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Task 1 - List, Table, dan Multimedia</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+        background-color: #f5f5f5;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #ffffff;
+        margin-bottom: 30px;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        background-color: #eaeaea;
+        font-weight: bold;
+    }
+
+    .keterangan {
+        text-align: left;
+        font-size: 13px;
+        vertical-align: top;
+    }
+
+    audio, video {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    img.logo {
+        max-width: 200px;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 260px;
+        height: 150px;
+        border: none;
+    }
+</style>
+</head>
+<body>
+
+    <h2>Task 1: Implementasi List, Table, dan Multimedia</h2>
+
+    <!-- TABEL 1: Audio, Video, Image, Keterangan -->
+    <table>
+        <tr>
+            <th>Audio</th>
+            <th>Video</th>
+            <th>Image</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="video1.mp4">
+                
+                </audio>
+            </td>
+            <td>
+                <video controls>
+                    <source src="video1./mp4">
+                
+                </video>
+            </td>
+            <td>
+                <img src="https://satyaterrabhinneka.ac.id/assets/img/logo-universitas-satya-terra-bhinneka.png" alt="Logo Universitas Satya Terra Bhinneka" class="logo">
+            </td>
+            <td class="keterangan">
+                <h3>Biodata Diri</h3>
+                <ul>
+                    <li>Nama : (SANRIS JUWITA TAMBUNAN)</li>
+                    <li>NIM : (2503310592)</li>
+                    <li>Kelas : (IF B SG)</li>
+                    <li>Prodi : (INFORMATIKA)</li>
+                    <li>Alamat : (SIBOLGA)</li>
+                    <li>Hobi : (DENGAR MUSIK)</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <!-- TABEL 2: Video Youtube dan Konten -->
+    <table>
+        <tr>
+            <th>Video</th>
+            <th>Konten</th>
+        </tr>
+        <tr>
+            <td>
+                <iframe src="https://youtu.be/tL_rNvmrSjM?si=16QlfyYi5jkyMO-t" 
+                        title="Video Youtube" 
+                        allowfullscreen>
+                </iframe>
+            </td>
+            <td class="keterangan">
+                <h4>Wonderful Indonesia | Keindahan Indonesia</h4>
+                <p>Indonesia Raya | Lagu Indonesia Raya</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

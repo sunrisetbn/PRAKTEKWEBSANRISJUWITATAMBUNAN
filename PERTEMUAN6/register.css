@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4caf50;
+}
+
+.register-box {
+    width: 320px;
+    background: linear-gradient(180deg, #7ed99a 0%, #eafff0 100%);
+    padding: 25px 35px 20px;
+    border-radius: 2px;
+    color: #1b4d2e;
+}
+
+.register-box h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    color: #1b4d2e;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 2px;
+    color: #1b4d2e;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 4px 2px;
+    border: none;
+    border-bottom: 1px solid #1b4d2e;
+    background: transparent;
+    color: #1b4d2e;
+    outline: none;
+    font-size: 13px;
+}
+
+.input-group input::placeholder {
+    color: rgba(27, 77, 46, 0.5);
+}
+
+.jenis-kelamin {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.jenis-kelamin label:first-child {
+    width: 100%;
+}
+
+.jenis-kelamin span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.radio-label {
+    display: inline;
+    font-size: 12px;
+    color: #1b4d2e;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 8px;
+    margin-top: 16px;
+    background: transparent;
+    border: 1px solid #1b4d2e;
+    color: #1b4d2e;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background: #1b4d2e;
+    color: #eafff0;
+}
+
+.bawah {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #1b4d2e;
+}
+
+.bawah a {
+    color: #1b4d2e;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bawah a:hover {
+    opacity: 0.7;
+}

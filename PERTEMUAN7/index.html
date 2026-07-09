@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator JavaScript</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:350px;
+            margin:80px auto;
+            padding:20px;
+            background:#fff;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+            text-align:center;
+        }
+
+        h1{
+            margin-bottom:20px;
+        }
+
+        input{
+            width:90%;
+            padding:10px;
+            margin:10px 0;
+            font-size:16px;
+        }
+
+        button{
+            width:70px;
+            padding:10px;
+            margin:5px;
+            font-size:18px;
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Kalkulator</h1>
+
+    <input type="number" id="angka1" placeholder="Masukkan Angka Pertama">
+
+    <input type="number" id="angka2" placeholder="Masukkan Angka Kedua">
+
+    <br>
+
+    <button onclick="tambah()">+</button>
+    <button onclick="kurang()">-</button>
+    <button onclick="kali()">*</button>
+    <button onclick="bagi()">/</button>
+
+</div>
+
+<script>
+
+function tambah(){
+
+    let a = parseFloat(document.getElementById("angka1").value);
+    let b = parseFloat(document.getElementById("angka2").value);
+
+    if(isNaN(a) || isNaN(b)){
+        alert("Masukkan angka yang benar!");
+        return;
+    }
+
+    alert("Hasil = " + (a+b));
+
+}
+
+function kurang(){
+
+    let a = parseFloat(document.getElementById("angka1").value);
+    let b = parseFloat(document.getElementById("angka2").value);
+
+    if(isNaN(a) || isNaN(b)){
+        alert("Masukkan angka yang benar!");
+        return;
+    }
+
+    alert("Hasil = " + (a-b));
+
+}
+
+function kali(){
+
+    let a = parseFloat(document.getElementById("angka1").value);
+    let b = parseFloat(document.getElementById("angka2").value);
+
+    if(isNaN(a) || isNaN(b)){
+        alert("Masukkan angka yang benar!");
+        return;
+    }
+
+    alert("Hasil = " + (a*b));
+
+}
+
+function bagi(){
+
+    let a = parseFloat(document.getElementById("angka1").value);
+    let b = parseFloat(document.getElementById("angka2").value);
+
+    if(isNaN(a) || isNaN(b)){
+        alert("Masukkan angka yang benar!");
+        return;
+    }
+
+    if(b==0){
+        alert("Tidak dapat dibagi dengan nol!");
+        return;
+    }
+
+    alert("Hasil = " + (a/b));
+
+}
+
+</script>
+
+</body>
+</html>
